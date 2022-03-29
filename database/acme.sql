@@ -83,7 +83,8 @@ CREATE TABLE `vehiculo` (
 -- Indices de la tabla `persona`
 --
 ALTER TABLE `persona`
-  ADD PRIMARY KEY (`Dk`);
+  ADD PRIMARY KEY (`Dk`),
+  ADD UNIQUE KEY `numdoc_idx` (`numdoc`);
 
 --
 -- Indices de la tabla `tipovehiculo`
